@@ -1,12 +1,26 @@
-#include <stdio.h>
+#include "main.h"
 
-int _abs(int n);
-
+/**
+ * main - Entry point to test print_last_digit
+ *
+ * Return: Always 0
+ */
 int main(void)
 {
-	printf("Abs of -5 = %d\n", _abs(-5));
-	printf("Abs of 0 = %d\n", _abs(0));
-	printf("Abs of 7 = %d\n", _abs(7));
+	int r;
+
+	r = print_last_digit(98);
+	_putchar('0' + r);
+	_putchar('\n');
+
+	r = print_last_digit(0);
+	_putchar('0' + r);
+	_putchar('\n');
+
+	r = print_last_digit(-1024);
+	_putchar('0' + r);
+	_putchar('\n');
+
 	return (0);
 }
 
