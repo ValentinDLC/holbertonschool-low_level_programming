@@ -3,15 +3,25 @@
 
 int main(void)
 {
-	char c1 = 'b';
-	char c2 = 'Z';
-	char c3 = '3';
-	char c4 = '?';
+	int r;
 
-	printf("%c is alphabetic? %d\n", c1, _isalpha(c1));
-	printf("%c is alphabetic? %d\n", c2, _isalpha(c2));
-	printf("%c is alphabetic? %d\n", c3, _isalpha(c3));
-	printf("%c is alphabetic? %d\n", c4, _isalpha(c4));
+	r = print_sign(98);
+	_putchar(',');
+	_putchar(' ');
+	_putchar(r + '0');
+	_putchar('\n');
+
+	r = print_sign(0);
+	_putchar(',');
+	_putchar(' ');
+	_putchar(r + '0');
+	_putchar('\n');
+
+	r = print_sign(-5);
+	_putchar(',');
+	_putchar(' ');
+	_putchar(r + '0');
+	_putchar('\n');
 
 	return (0);
 }
