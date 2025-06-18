@@ -1,28 +1,12 @@
-#include "main.h"
 #include <stdio.h>
+
+int _abs(int n);
 
 int main(void)
 {
-	int r;
-
-	r = print_sign(98);
-	_putchar(',');
-	_putchar(' ');
-	_putchar(r + '0');
-	_putchar('\n');
-
-	r = print_sign(0);
-	_putchar(',');
-	_putchar(' ');
-	_putchar(r + '0');
-	_putchar('\n');
-
-	r = print_sign(-5);
-	_putchar(',');
-	_putchar(' ');
-	_putchar(r + '0');
-	_putchar('\n');
-
+	printf("Abs of -5 = %d\n", _abs(-5));
+	printf("Abs of 0 = %d\n", _abs(0));
+	printf("Abs of 7 = %d\n", _abs(7));
 	return (0);
 }
 
