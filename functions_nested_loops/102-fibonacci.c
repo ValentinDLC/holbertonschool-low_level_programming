@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * print_number - prints an an unsigned long number using _putchar
+ * print_long_number - prints an an unsigned long number using _putchar
  * @n: the number to print
  */
 void print_long_number(unsigned long n)
