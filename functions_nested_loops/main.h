@@ -16,5 +16,7 @@ void print_to_98(int n);
 void print_times_table(int n);
 void print_number(int n);
 void print_digit(int n);
+void print_multiple_of_3_or_5(int sum);
+void print_long_number(unsigned long n);
 #endif /* MAIN_H */
 
