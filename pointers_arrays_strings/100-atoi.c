@@ -26,7 +26,7 @@ int _atoi(char *s)
 
 			if (result > (INT_MAX - (s[i] - 48)) / 10)
 			{
-				return (sign == 1) ? INT_MAX : INT_MIN;
+				return ((sign == 1) ? INT_MAX : INT_MIN);
 			}
 
 			result = result * 10 + (s[i] - 48);
