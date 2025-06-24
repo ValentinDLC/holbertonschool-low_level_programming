@@ -1,4 +1,5 @@
 #include "main.h"
+#include <limits.h>
 
 /**
  * _atoi - Converts a string to an integer.
@@ -16,16 +17,19 @@ int _atoi(char *s)
 	while (s[i] != 0)
 	{
 		if (s[i] == 45)
-		{
 			sign *= -1;
-		}
 		else if (s[i] == 43)
-		{
-		}
+			;
 		else if (s[i] >= 48 && s[i] <= 57)
 		{
 			found_digit = 1;
-			result = (result * 10) + (s[i] - 48);
+
+			if (result > (INT_MAX - (s[i] - 48)) / 10)
+			{
+				return (sign == 1) ? INT_MAX : INT_MIN;
+			}
+
+			result = result * 10 + (s[i] - 48);
 		}
 		else if (found_digit)
 		{
