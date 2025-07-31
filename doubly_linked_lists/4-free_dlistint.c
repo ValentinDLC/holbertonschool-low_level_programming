@@ -3,7 +3,7 @@
 #include "lists.h"
 
 /**
- * free_list - Frees a linked list
+ * free_dlistint - frees a dlistint_t list
  * @head: Pointer to the head of the list
  *
  * Description: This function frees all the nodes in a doubly linked list.
